@@ -122,6 +122,33 @@
 .cover-header__columns{
   display: flex;
 }
+
+/*-------------------------------------------*/
+/*                footer-data                */
+/*-------------------------------------------*/
 .cover-footer__columns{
   display: flex;
+  column-gap: 10px;
+  justify-content: space-evenly;
+  &__data{
+    display: flex;
+    column-gap: 20px;
+    width: 45%;
+    & p{
+      margin-bottom: 20px;
+      padding-top: 2px;
+      text-align: right;
+      white-space: nowrap;
+    }
+    & a{
+        margin-bottom: 20px;
+    }
+  }
+}
+
+/*-------------------------------------------*/
+/*                 portfolio                 */
+/*-------------------------------------------*/
+.portfolio__columns{
+
 }

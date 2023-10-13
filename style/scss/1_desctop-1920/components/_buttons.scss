@@ -1,1 +1,29 @@
+.button {
+  display: inline-flex;
 
+  padding: 0px 18px 1px 16px;
+  border: 1px solid #0A0A0A;
+  border-radius: 27px;
+  align-items: center;
+  background: #FFF;
+  box-shadow: 0px 3px 4px 0px rgba(10, 10, 10, 0.60);
+  &:hover{
+    background-color: $color-yellow;
+    box-shadow: 0px 2px 6px 0px rgba(10, 10, 10, 0.80);
+  }
+}
+
+.btn-arrow{
+  position: relative;
+  padding: 0px 54px 1px 18px;
+  &::after {
+    content: url(/img/arrrow-btn-right.svg);
+    position: absolute;
+    width: 25px;
+    height: 33px;
+    // top: 0px;
+    right: 18px;
+    color: $color-dark;
+    opacity: 0.8;
+  }
+}
