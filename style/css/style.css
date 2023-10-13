@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* 1_desctop-от 1600 до 1920 */
+/* ====== 1 Прижать футер */
+/* 1) */
+html, body {
+  height: 100%;
+  padding-top: 20px;
+  background-color: #FCFCFC; }
+
+/* 2) */
+.main-container {
+  min-height: 100%; }
+
+/* 3) + цвет фона + центрирование содержимого*/
+footer {
+  height: 114px;
+  margin-top: -114px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/* 4) */
+.clr {
+  height: 114px; }
+
+@media (max-width: 768px) {
+  footer {
+    height: 305px;
+    margin-top: -305px; }
+
+  .clr {
+    height: 305px; } }
+/* ширина + границы сетки */
+.container-rows {
+  width: 86.97%;
+  margin: 0 auto;
+  outline: 1px solid #d80a0a;
+  box-sizing: border-box; }
+
+@media (max-width: 1600px) {
+  .container-rows {
+    width: 82.5%; } }
+@media (max-width: 1280px) {
+  .container-rows {
+    width: 89.53%; } }
+@media (max-width: 1024px) {
+  .container-rows {
+    width: 93.94%; } }
+@media (max-width: 986px) {
+  .container-rows {
+    width: 92.7%; } }
+@media (max-width: 480px) {
+  .container-rows {
+    width: 88.33%; } }
+@media (max-width: 360px) {
+  .container-rows {
+    width: 89.44%; } }
+/* 1) для блоков */
+.padding-block-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.padding-block-cover {
+  padding-top: 22px;
+  padding-bottom: 22px; }
+
+.padding-block-name {
+  padding-top: 90px;
+  padding-bottom: 90px; }
+
+/* 3) для изображения*/
+.padding-block-img {
+  padding-top: 90px;
+  padding-bottom: 90px; }
+
+/* 4) для заголовка и текста*/
+.padding-block-content-header {
+  padding-top: 60px;
+  padding-bottom: 40px; }
+
+/* 5) для заголовка и текста*/
+.padding-block-content {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+/* 6) для заголовка и изображения*/
+.padding-block-textimg {
+  padding-top: 70px;
+  padding-bottom: 86px; }
+
+.first-font, h1, .cover-subtitle, h2, h3, h4, .text-basic,
+p, .marquee-text, .footer-cont-copyright-text p {
+  font-family: 'Mont', Arial, Helvetica, sans-serif;
+  font-family: 'Unbounded', sans-serif; }
+
+.second-font {
+  font-family: 'OlympicHeadline', Arial, Helvetica, sans-serif; }
+
+h1 {
+  font-size: 3em;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 101%;
+  color: #28468C; }
+
+.cover-subtitle {
+  font-size: 1em;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 135%;
+  color: #181818; }
+
+h2 {
+  font-size: 3em;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 108%;
+  color: #767676; }
+
+h3 {
+  font-size: 2em;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 108%;
+  color: #767676; }
+
+h4 {
+  font-size: 1.6em;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 108%;
+  color: #767676; }
+
+.text-basic,
+p {
+  font-size: 1.5em;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 169%;
+  color: #0A0A0A; }
+
+.marquee-text {
+  font-size: 1.5em;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 169%;
+  text-transform: uppercase;
+  color: #0A0A0A; }
+
+.footer-cont-copyright-text p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875em;
+  line-height: 110%;
+  color: #787878; }
+
+.icon-vk {
+  width: 50px;
+  height: 50px;
+  fill: #7c03d2; }
+  .icon-vk:hover {
+    transform: scale(1.2); }
+
+.hidden {
+  display: none; }
+
+/*-------------------------------------------*/
+/*                   lines                   */
+/*-------------------------------------------*/
+.marquee-hide {
+  width: 100vw;
+  overflow: hidden; }
+
+.marquee-container {
+  height: 50px;
+  margin: 0 20px 0 20px;
+  border: 1px solid #0A0A0A;
+  display: flex;
+  align-items: center;
+  background: #E8FD46;
+  overflow: hidden; }
+
+.marquee1::after {
+  content: "\a   graphic designer   ◆    graphic designer   ◆    graphic designer   ◆    graphic designer   ◆    graphic designer   ◆    graphic designer   ◆    graphic designer   ◆    graphic designer   ◆    graphic designer   ◆    graphic designer   ◆    graphic designer   ◆    graphic designer   ◆    graphic designer   ◆    graphic designer   ◆    graphic designer   ◆    graphic designer   ◆    graphic designer   ◆    graphic designer   ◆  "; }
+
+.marquee1 {
+  white-space: nowrap;
+  animation: marquee-right 100s linear infinite; }
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%); }
+  to {
+    transform: translateX(0%); } }
+.marquee2::after {
+  content: "\a   portfolio   ◆    portfolio   ◆    portfolio   ◆    portfolio   ◆    portfolio   ◆    portfolio   ◆    portfolio   ◆    portfolio   ◆    portfolio   ◆    portfolio   ◆    portfolio   ◆    portfolio   ◆    portfolio   ◆    portfolio   ◆    portfolio   ◆    portfolio   ◆    portfolio   ◆    portfolio   ◆  "; }
+
+.marquee2 {
+  white-space: nowrap;
+  animation: marquee-left 100s linear infinite; }
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0%); }
+  to {
+    transform: translateX(-50%); } }
+.marquee3::after {
+  content: "\a   copyright   2023   ©    copyright   2023   ©    copyright   2023   ©    copyright   2023   ©    copyright   2023   ©    copyright   2023   ©    copyright   2023   ©    copyright   2023   ©    copyright   2023   ©    copyright   2023   ©    copyright   2023   ©    copyright   2023   ©    copyright   2023   ©    copyright   2023   ©    copyright   2023   ©    copyright   2023   ©    copyright   2023   ©    copyright   2023   ©  "; }
+
+.marquee3 {
+  white-space: nowrap;
+  animation: marquee-right 100s linear infinite; }
+
+/*-------------------------------------------*/
+/*                    ava                    */
+/*-------------------------------------------*/
+.cover-header__columns {
+  display: flex; }
+
+.cover-footer__columns {
+  display: flex; }
+
+/* 2_desctop-от 1280 до 1600 */
+/* 3_desctop-от 1024 до 1280 */
+/* 4_tablet-от 768 до 1024 */
+/* 5_tablet-от 480 до 768*/
+/* 6_mob-от 360 до 480*/
+/* 7_mob-до 360*/
+
+/*# sourceMappingURL=style.css.map */

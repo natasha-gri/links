@@ -1,0 +1,118 @@
+/* ====== 1 Прижать футер */
+/* 1) */
+html, body {
+  height: 100%;
+  padding-top: 20px;
+  background-color: $body-bg;
+}
+
+/* 2) */
+.main-container {
+  min-height: 100%;
+}
+
+/* 3) + цвет фона + центрирование содержимого*/
+footer {
+  height: 114px;
+  margin-top: -114px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* 4) */
+.clr {
+  height: 114px;
+}
+@media (max-width : 768px) {
+  footer{
+    height: 305px;
+    margin-top: -305px;
+  }
+  .clr {
+    height: 305px;
+  }
+}
+// конец правила для прижатия футера
+
+// ====== 2 стили ширина и границы сетки
+/* ширина + границы сетки */
+.container-rows {
+  width: 86.97%; // 1670/1920
+  margin: 0 auto;
+  outline: 1px solid rgb(216, 10, 10);
+  box-sizing: border-box;
+}
+@media (max-width : 1600px) {
+  .container-rows {
+    width: 82.5%; // 1320/1600
+  }
+}
+@media (max-width : 1280px) {
+  .container-rows {
+    width: 89.53%; // 1146/1280
+  }
+}
+@media (max-width : 1024px) {
+  .container-rows {
+    width: 93.94%; // 962/1024
+  }
+}
+@media (max-width : 986px) {
+  .container-rows {
+    width: 92.7%; // 712/768
+  }
+}
+@media (max-width : 480px) {
+  .container-rows {
+    width: 88.33%; // 424/480
+  }
+}
+@media (max-width : 360px) {
+  .container-rows {
+    width: 89.44%; // 322/360
+  }
+}
+
+// ====== 3 стили для отступов сверху-снизу секции
+/* 1) для блоков */
+.padding-block-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.padding-block-cover {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.padding-block-name {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* 3) для изображения*/
+.padding-block-img {
+  //min-height: 100px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* 4) для заголовка и текста*/
+.padding-block-content-header {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+/* 5) для заголовка и текста*/
+.padding-block-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* 6) для заголовка и изображения*/
+.padding-block-textimg {
+  //min-height: 100px;
+  padding-top: 70px;
+  padding-bottom: 86px;
+}
+

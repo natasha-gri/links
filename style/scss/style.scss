@@ -1,0 +1,35 @@
+/* 1_desctop-от 1600 до 1920 */
+@import '1_desctop-1920/helpers/variables';
+@import '1_desctop-1920/helpers/model';
+@import '1_desctop-1920/base/typography';
+@import '1_desctop-1920/components/icons';
+@import '1_desctop-1920/layout/b1-header'; 
+@import '1_desctop-1920/layout/menu';
+@import '1_desctop-1920/layout/body1-home';
+@import '1_desctop-1920/layout/body1-some-page';
+@import '1_desctop-1920/layout/b2-footer'; 
+@import '1_desctop-1920/layout/slider'; 
+@import '1_desctop-1920/components/buttons';
+@import '1_desctop-1920/components/forms';
+  
+/* 2_desctop-от 1280 до 1600 */
+@import '2_desctop-1600/base/desc-typography'; 
+@import '2_desctop-1600/layout/desc-body1-home';
+
+/* 3_desctop-от 1024 до 1280 */
+@import '3_desctop-1280/layout/desc-body1-home'; 
+
+//*************** mobile
+
+/* 4_tablet-от 768 до 1024 */
+@import 'mobile/4_tablet-1024/layout/tab-body1-home'; 
+
+/* 5_tablet-от 480 до 768*/
+@import 'mobile/5_tablet-768/layout/tab-body1-home'; 
+
+/* 6_mob-от 360 до 480*/
+@import 'mobile/6_mobile-480/layout/mob-body1-home';
+
+/* 7_mob-до 360*/
+@import 'mobile/7_mobile-360/layout/mob-body1-home';
+

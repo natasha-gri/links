@@ -1,0 +1,92 @@
+.first-font {
+  font-family: 'Mont', Arial, Helvetica, sans-serif;
+  font-family: 'Unbounded', sans-serif;
+}
+
+.second-font {
+  font-family: 'OlympicHeadline', Arial, Helvetica, sans-serif;
+}
+
+// ********************** h1
+h1 {
+  @extend .first-font;
+  font-size: 3em; //48
+  font-weight: 800; //bold
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 101%;
+  color: $text-h1;
+}
+.cover-subtitle{
+  @extend .first-font;
+  font-size: 1em; //
+  font-weight: 700; //semibold
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 135%;
+  color: $cover-subtitle;
+}
+h2 {
+  @extend .first-font;
+  font-size: 3em; //0
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 108%;
+  color: $text-h2;
+}
+h3 {
+  @extend .first-font;
+  font-size: 2em; //32
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 108%;
+  color: $text-h2;
+}
+h4 {
+  @extend .first-font;
+  font-size: 1.6em; //32
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 108%;
+  color: $text-h2;
+}
+// ****************** menu
+
+
+// *************** main text
+.text-basic,
+p {
+  @extend .first-font;
+  font-size: 1.5em; //16px
+  font-weight: 400; //regular
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 169%;
+  // text-transform: uppercase;
+  // letter-spacing: 0.025em;
+  color: $color-dark;
+}
+
+.marquee-text{
+  @extend .first-font;
+  font-size: 1.5em; //16px
+  font-weight: 400; //regular
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 169%;
+  text-transform: uppercase;
+  color: $color-dark;
+}
+
+// ***************** footer
+.footer-cont-copyright-text p{
+@extend .first-font;
+font-style: normal;
+font-weight: 600;
+font-size: 0.875em;
+line-height: 110%;
+color: #787878;
+}

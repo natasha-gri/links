@@ -1,0 +1,127 @@
+.hidden {
+  display: none;
+}
+
+/*-------------------------------------------*/
+/*                   lines                   */
+/*-------------------------------------------*/
+.marquee-hide {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.marquee-container{
+  height: 50px;
+  margin: 0 20px 0 20px;
+  border: 1px solid $color-dark;
+  display: flex;
+  align-items: center;
+  background: $color-yellow;
+  overflow: hidden;
+}
+.marquee1::after{
+  content: "
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0
+  graphic designer\A0\A0\A0 ◆\A0\A0";
+}
+.marquee1{ 
+  white-space: nowrap;
+  animation: marquee-right 100s linear infinite;
+}
+
+@keyframes marquee-right{
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.marquee2::after{
+  content: "
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0
+  portfolio\A0\A0\A0 ◆\A0\A0";
+}
+.marquee2{ 
+  white-space: nowrap;
+  animation: marquee-left 100s linear infinite;
+}
+
+@keyframes marquee-left{
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+// 18
+.marquee3::after{
+  content: "
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0
+  copyright\A0\A0\A0 2023\A0\A0\A0 ©\A0\A0";
+}
+.marquee3{ 
+  white-space: nowrap;
+  animation: marquee-right 100s linear infinite;
+}
+
+/*-------------------------------------------*/
+/*                    ava                    */
+/*-------------------------------------------*/
+
+.cover-header__columns{
+  display: flex;
+}
+.cover-footer__columns{
+  display: flex;
+}
