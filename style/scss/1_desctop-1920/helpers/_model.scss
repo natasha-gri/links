@@ -13,15 +13,15 @@ html, body {
 
 /* 3) + цвет фона + центрирование содержимого*/
 footer {
-  height: 114px;
-  margin-top: -114px;
+  height: 120px;
+  margin-top: -120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 /* 4) */
 .clr {
-  height: 114px;
+  height: 120px;
 }
 @media (max-width : 768px) {
   footer{
@@ -39,7 +39,7 @@ footer {
 .container-rows {
   width: 86.97%; // 1670/1920
   margin: 0 auto;
-  outline: 1px solid rgb(216, 10, 10);
+  // outline: 1px solid rgb(216, 10, 10);
   box-sizing: border-box;
 }
 @media (max-width : 1600px) {
@@ -110,7 +110,7 @@ footer {
 /* 5) для заголовка и текста*/
 .padding-block-content {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 
 /* 6) для заголовка и изображения*/

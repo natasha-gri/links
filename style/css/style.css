@@ -13,15 +13,15 @@ html, body {
 
 /* 3) + цвет фона + центрирование содержимого*/
 footer {
-  height: 114px;
-  margin-top: -114px;
+  height: 120px;
+  margin-top: -120px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
 /* 4) */
 .clr {
-  height: 114px; }
+  height: 120px; }
 
 @media (max-width: 768px) {
   footer {
@@ -34,7 +34,6 @@ footer {
 .container-rows {
   width: 86.97%;
   margin: 0 auto;
-  outline: 1px solid #d80a0a;
   box-sizing: border-box; }
 
 @media (max-width: 1600px) {
@@ -82,7 +81,7 @@ footer {
 /* 5) для заголовка и текста*/
 .padding-block-content {
   padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-bottom: 0px; }
 
 /* 6) для заголовка и изображения*/
 .padding-block-textimg {
@@ -148,7 +147,6 @@ p {
 /*                   lines                   */
 /*-------------------------------------------*/
 .marquee-hide {
-  width: 100vw;
   overflow: hidden; }
 
 .marquee-container {
@@ -157,7 +155,7 @@ p {
   border: 1px solid #0A0A0A;
   display: flex;
   align-items: center;
-  background: #E8FD46;
+  background: #f0ff80;
   overflow: hidden; }
 
 .marquee1::after {
@@ -206,8 +204,12 @@ p {
   justify-content: space-evenly; }
   .cover-footer__columns__data {
     display: flex;
-    column-gap: 20px;
+    column-gap: 5%;
     width: 45%; }
+    .cover-footer__columns__data__description {
+      width: 67%; }
+    .cover-footer__columns__data__buttons {
+      width: 28%; }
     .cover-footer__columns__data p {
       margin-bottom: 20px;
       padding-top: 2px;
@@ -215,10 +217,47 @@ p {
       white-space: nowrap; }
     .cover-footer__columns__data a {
       margin-bottom: 20px; }
+  .cover-footer__columns__contacts {
+    display: flex;
+    column-gap: 5%;
+    width: 45%; }
+    .cover-footer__columns__contacts__description {
+      width: 46%; }
+    .cover-footer__columns__contacts__buttons {
+      width: 49%; }
+    .cover-footer__columns__contacts p {
+      margin-bottom: 20px;
+      padding-top: 2px;
+      text-align: right;
+      white-space: nowrap; }
+    .cover-footer__columns__contacts a {
+      margin-bottom: 20px; }
 
 /*-------------------------------------------*/
 /*                 portfolio                 */
 /*-------------------------------------------*/
+.portfolio__columns {
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-evenly; }
+  .portfolio__columns__col {
+    display: flex;
+    column-gap: 5%;
+    width: 45%;
+    justify-content: center;
+    align-items: center; }
+    .portfolio__columns__col__description {
+      width: 67%; }
+    .portfolio__columns__col__buttons {
+      width: 28%; }
+    .portfolio__columns__col p {
+      margin-bottom: 20px;
+      padding-top: 2px;
+      text-align: right;
+      white-space: nowrap; }
+    .portfolio__columns__col a {
+      margin-bottom: 20px; }
+
 .button {
   display: inline-flex;
   padding: 0px 18px 1px 16px;
@@ -228,7 +267,7 @@ p {
   background: #FFF;
   box-shadow: 0px 3px 4px 0px rgba(10, 10, 10, 0.6); }
   .button:hover {
-    background-color: #E8FD46;
+    background-color: #f0ff80;
     box-shadow: 0px 2px 6px 0px rgba(10, 10, 10, 0.8); }
 
 .btn-arrow {

@@ -6,7 +6,7 @@
 /*                   lines                   */
 /*-------------------------------------------*/
 .marquee-hide {
-  width: 100vw;
+  // width: 100vw;
   overflow: hidden;
 }
 
@@ -132,8 +132,34 @@
   justify-content: space-evenly;
   &__data{
     display: flex;
-    column-gap: 20px;
+    column-gap: 5%;
     width: 45%;
+    &__description{
+      width: 67%;
+    }
+    &__buttons{
+      width: 28%;
+    }
+    & p{
+      margin-bottom: 20px;
+      padding-top: 2px;
+      text-align: right;
+      white-space: nowrap;
+    }
+    & a{
+        margin-bottom: 20px;
+    }
+  }
+  &__contacts{
+    display: flex;
+    column-gap: 5%;
+    width: 45%;
+    &__description{
+      width: 46%;
+    }
+    &__buttons{
+      width: 49%;
+    }
     & p{
       margin-bottom: 20px;
       padding-top: 2px;
@@ -150,5 +176,29 @@
 /*                 portfolio                 */
 /*-------------------------------------------*/
 .portfolio__columns{
-
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-evenly;
+  &__col{
+    display: flex;
+    column-gap: 5%;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    &__description{
+      width: 67%;
+    }
+    &__buttons{
+      width: 28%;
+    }
+    & p{
+      margin-bottom: 20px;
+      padding-top: 2px;
+      text-align: right;
+      white-space: nowrap;
+    }
+    & a{
+        margin-bottom: 20px;
+    }
+  }
 }
