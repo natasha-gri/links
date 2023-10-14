@@ -121,6 +121,31 @@
 
 .cover-header__columns{
   display: flex;
+  // justify-content: space-between;
+  &__ava{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+  &__name{
+    width: 60%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    & span{
+      font-size: 47px;
+    }
+    & img{
+      margin-bottom: -19px;
+      display: inline-block;
+    }
+    & p:nth-child(1){
+      margin-bottom: -45px;
+    }
+    & p:nth-child(3){
+      text-align: right;
+    }
+  }
 }
 
 /*-------------------------------------------*/

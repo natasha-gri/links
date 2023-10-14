@@ -194,6 +194,24 @@ p {
 /*-------------------------------------------*/
 .cover-header__columns {
   display: flex; }
+  .cover-header__columns__ava {
+    width: 40%;
+    display: flex;
+    justify-content: center; }
+  .cover-header__columns__name {
+    width: 60%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center; }
+    .cover-header__columns__name span {
+      font-size: 47px; }
+    .cover-header__columns__name img {
+      margin-bottom: -19px;
+      display: inline-block; }
+    .cover-header__columns__name p:nth-child(1) {
+      margin-bottom: -45px; }
+    .cover-header__columns__name p:nth-child(3) {
+      text-align: right; }
 
 /*-------------------------------------------*/
 /*                footer-data                */
