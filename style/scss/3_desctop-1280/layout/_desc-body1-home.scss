@@ -1,3 +1,71 @@
 @media (max-width : 1280px) {
+  .marquee-container{
+    height: 35px;
+    margin: 0 3% 0 3%;
+  }
+
+  .cover-header__columns{
+    margin-bottom: 36px;
+    &__ava{
+      & img{
+        max-width: 62%;
+      }
+    }
+    &__name{
+      padding-top: 39px;
+      margin-left: -93px;
+      & span{
+        font-size: 30px;
+      }
+      & p:nth-child(1){
+        margin-bottom: 12px;
+      }
+      & p:nth-child(2){
+        margin-bottom: 6px;
+        &::after{
+          bottom: -16px;
+          right: -92px;
+          transform: scale(.7);
+        }
+      }
+      & p:nth-child(3){
+        margin-right: -69px;
+      }
+    }
+  }
+
+  .cover-footer__columns{
+    &__data{
+      & p{
+        margin-bottom: $btn-subtitle-margin-bottom-1280;
+      }
+      & a{
+        margin-bottom: $btn-margin-bottom-1280;
+      }
+    }
+    &__contacts{
+      & p{
+        margin-bottom: $btn-subtitle-margin-bottom-1280;
+      }
+      & a{
+        margin-bottom: $btn-margin-bottom-1280;
+      }
+    }
+  }
+
+  .portfolio__columns{
+    &__col{
+      & p:not(:last-child){
+        margin-bottom: $btn-subtitle-margin-bottom-1280;
+      }
+
+      & a:not(:last-child){
+          margin-bottom: $btn-margin-bottom-1280;
+      }
+      & img{
+        max-width: 70%;
+      }
+    }
+  }
 
 }

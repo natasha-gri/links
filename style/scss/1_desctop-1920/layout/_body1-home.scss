@@ -12,8 +12,8 @@
 
 .marquee-container{
   height: 52px;
-  margin: 0 52px 0 46px;
-  border: 1px solid $color-dark;
+  margin: 0 2.5% 0 2.5%;
+  // border: 1px solid $color-dark;
   display: flex;
   align-items: center;
   background: $color-yellow;
@@ -127,28 +127,40 @@
     width: 42%;
     display: flex;
     justify-content: center;
+    & img{
+      max-width: 100%;
+      object-fit: contain;
+    }
   }
   &__name{
     width: 58%;
     padding-top: 56px;
-    margin-left: -65px;
+    margin-left: -122px;
     display: flex;
     justify-content: center;
     & span{
       font-size: 47px;
       padding-left: 4px;
     }
-    & img{
-      margin-bottom: -19px;
-      display: inline-block;
-    }
     & p:nth-child(1){
-      margin-bottom: -39px;
+      margin-bottom: 18px;
     }
     & p:nth-child(2){
       margin-bottom: 11px;
+      position: relative;
+      &::after{
+        content: url(../../img/hand-rock.png);
+        position: absolute;
+        bottom: -3px;
+        right: -114px;
+        background-size: 100% 100%;
+        display: block;
+        height: 100px;
+        width: 100px;
+      }
     }
     & p:nth-child(3){
+      margin-right: -89px;
       text-align: right;
     }
   }
@@ -229,6 +241,11 @@
     }
     & a:not(:last-child){
         margin-bottom: $btn-margin-bottom;
+    }
+
+    & img{
+      max-width: 100%;
+      object-fit: contain;
     }
   }
 }

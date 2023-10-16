@@ -38,7 +38,7 @@ footer {
 
 @media (max-width: 1600px) {
   .container-rows {
-    width: 82.5%; } }
+    width: 100%; } }
 @media (max-width: 1280px) {
   .container-rows {
     width: 89.53%; } }
@@ -88,6 +88,20 @@ footer {
   padding-top: 70px;
   padding-bottom: 86px; }
 
+@media (max-width: 1280px) {
+  .padding-block-cover {
+    padding-top: 26px;
+    padding-bottom: 52px; }
+
+  .padding-block-content {
+    padding-top: 35px; }
+
+  footer {
+    height: 114px;
+    margin-top: -114px; }
+
+  .clr {
+    height: 114px; } }
 .first-font, h1, .c
 .text-basic,
 p, .marquee-text, .button-text {
@@ -150,8 +164,7 @@ p {
 
 .marquee-container {
   height: 52px;
-  margin: 0 52px 0 46px;
-  border: 1px solid #0A0A0A;
+  margin: 0 2.5% 0 2.5%;
   display: flex;
   align-items: center;
   background: #E8FD46;
@@ -198,23 +211,34 @@ p {
     width: 42%;
     display: flex;
     justify-content: center; }
+    .cover-header__columns__ava img {
+      max-width: 100%;
+      object-fit: contain; }
   .cover-header__columns__name {
     width: 58%;
     padding-top: 56px;
-    margin-left: -65px;
+    margin-left: -122px;
     display: flex;
     justify-content: center; }
     .cover-header__columns__name span {
       font-size: 47px;
       padding-left: 4px; }
-    .cover-header__columns__name img {
-      margin-bottom: -19px;
-      display: inline-block; }
     .cover-header__columns__name p:nth-child(1) {
-      margin-bottom: -39px; }
+      margin-bottom: 18px; }
     .cover-header__columns__name p:nth-child(2) {
-      margin-bottom: 11px; }
+      margin-bottom: 11px;
+      position: relative; }
+      .cover-header__columns__name p:nth-child(2)::after {
+        content: url(../../img/hand-rock.png);
+        position: absolute;
+        bottom: -3px;
+        right: -114px;
+        background-size: 100% 100%;
+        display: block;
+        height: 100px;
+        width: 100px; }
     .cover-header__columns__name p:nth-child(3) {
+      margin-right: -89px;
       text-align: right; }
 
 /*-------------------------------------------*/
@@ -277,6 +301,9 @@ p {
       white-space: nowrap; }
     .portfolio__columns__col a:not(:last-child) {
       margin-bottom: 32px; }
+    .portfolio__columns__col img {
+      max-width: 100%;
+      object-fit: contain; }
 
 .button {
   display: inline-flex;
@@ -294,7 +321,7 @@ p {
   position: relative;
   padding: 0px 50px 2px 17px; }
   .btn-arrow::after {
-    content: url(/img/arrrow-btn-right.svg);
+    content: url(../../img/arrrow-btn-right.svg);
     position: absolute;
     width: 25px;
     height: 26px;
@@ -302,8 +329,74 @@ p {
     color: #0A0A0A;
     opacity: 0.9; }
 
+@media (max-width: 1280px) {
+  .btn-arrow {
+    padding: 0px 43px 2px 17px; }
+    .btn-arrow::after {
+      height: 23px;
+      transform: scale(0.7); } }
 /* 2_desctop-от 1280 до 1600 */
+@media (max-width: 1600px) {
+  .text-basic,
+  p {
+    font-size: 1.1875em; }
+
+  .marquee-text {
+    font-size: 1.1875em; }
+
+  .button-text {
+    font-size: 1.1875em; } }
 /* 3_desctop-от 1024 до 1280 */
+@media (max-width: 1280px) {
+  .text-basic,
+  p {
+    font-size: 1em; }
+
+  .marquee-text {
+    font-size: 1em; }
+
+  .button-text {
+    font-size: 1em; } }
+@media (max-width: 1280px) {
+  .marquee-container {
+    height: 35px;
+    margin: 0 3% 0 3%; }
+
+  .cover-header__columns {
+    margin-bottom: 36px; }
+    .cover-header__columns__ava img {
+      max-width: 62%; }
+    .cover-header__columns__name {
+      padding-top: 39px;
+      margin-left: -93px; }
+      .cover-header__columns__name span {
+        font-size: 30px; }
+      .cover-header__columns__name p:nth-child(1) {
+        margin-bottom: 12px; }
+      .cover-header__columns__name p:nth-child(2) {
+        margin-bottom: 6px; }
+        .cover-header__columns__name p:nth-child(2)::after {
+          bottom: -16px;
+          right: -92px;
+          transform: scale(0.7); }
+      .cover-header__columns__name p:nth-child(3) {
+        margin-right: -69px; }
+
+  .cover-footer__columns__data p {
+    margin-bottom: 21px; }
+  .cover-footer__columns__data a {
+    margin-bottom: 20px; }
+  .cover-footer__columns__contacts p {
+    margin-bottom: 21px; }
+  .cover-footer__columns__contacts a {
+    margin-bottom: 20px; }
+
+  .portfolio__columns__col p:not(:last-child) {
+    margin-bottom: 21px; }
+  .portfolio__columns__col a:not(:last-child) {
+    margin-bottom: 20px; }
+  .portfolio__columns__col img {
+    max-width: 70%; } }
 /* 4_tablet-от 768 до 1024 */
 /* 5_tablet-от 480 до 768*/
 /* 6_mob-от 360 до 480*/
