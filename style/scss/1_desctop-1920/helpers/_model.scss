@@ -13,15 +13,15 @@ html, body {
 
 /* 3) + цвет фона + центрирование содержимого*/
 footer {
-  height: 120px;
-  margin-top: -120px;
+  height: 168px;
+  margin-top: -168px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 /* 4) */
 .clr {
-  height: 120px;
+  height: 168px;
 }
 @media (max-width : 768px) {
   footer{
@@ -87,7 +87,7 @@ footer {
 
 .padding-block-cover {
   padding-top: 46px;
-  padding-bottom: 148px;
+  padding-bottom: 80px;
 }
 .padding-block-name {
   padding-top: 90px;
@@ -109,7 +109,7 @@ footer {
 
 /* 5) для заголовка и текста*/
 .padding-block-content {
-  padding-top: 40px;
+  padding-top: 56px;
   padding-bottom: 0px;
 }
 
