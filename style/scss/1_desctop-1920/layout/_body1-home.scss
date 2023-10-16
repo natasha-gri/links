@@ -11,8 +11,8 @@
 }
 
 .marquee-container{
-  height: 50px;
-  margin: 0 20px 0 20px;
+  height: 52px;
+  margin: 0 52px 0 46px;
   border: 1px solid $color-dark;
   display: flex;
   align-items: center;
@@ -120,27 +120,33 @@
 /*-------------------------------------------*/
 
 .cover-header__columns{
+  margin-bottom: 50px;
   display: flex;
   // justify-content: space-between;
   &__ava{
-    width: 40%;
+    width: 42%;
     display: flex;
     justify-content: center;
   }
   &__name{
-    width: 60%;
-    padding-top: 50px;
+    width: 58%;
+    padding-top: 56px;
+    margin-left: -65px;
     display: flex;
     justify-content: center;
     & span{
       font-size: 47px;
+      padding-left: 10px;
     }
     & img{
       margin-bottom: -19px;
       display: inline-block;
     }
     & p:nth-child(1){
-      margin-bottom: -45px;
+      margin-bottom: -39px;
+    }
+    & p:nth-child(2){
+      margin-bottom: 11px;
     }
     & p:nth-child(3){
       text-align: right;
@@ -157,22 +163,22 @@
   justify-content: space-evenly;
   &__data{
     display: flex;
-    column-gap: 5%;
+    column-gap: 4%;
     width: 45%;
     &__description{
-      width: 67%;
+      width: 68%;
     }
     &__buttons{
       width: 28%;
     }
     & p{
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       padding-top: 2px;
       text-align: right;
       white-space: nowrap;
     }
     & a{
-        margin-bottom: 20px;
+        margin-bottom: 36px;
     }
   }
   &__contacts{

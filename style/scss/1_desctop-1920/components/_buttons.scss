@@ -15,15 +15,14 @@
 
 .btn-arrow{
   position: relative;
-  padding: 0px 54px 1px 18px;
+  padding: 0px 50px 2px 17px;
   &::after {
     content: url(/img/arrrow-btn-right.svg);
     position: absolute;
     width: 25px;
-    height: 33px;
-    // top: 0px;
-    right: 18px;
+    height: 26px;
+    right: 13px;
     color: $color-dark;
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
