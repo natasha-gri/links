@@ -1,6 +1,5 @@
 .button {
-  display: inline-flex;
-
+  display: flex;
   padding: 0px 18px 1px 16px;
   border: 1px solid #0A0A0A;
   border-radius: 27px;
@@ -27,8 +26,7 @@
   }
 }
 
-@media (max-width : 1280px){
-  
+@media (max-width : 1280px){  
 .btn-arrow{
   padding: 0px 43px 2px 17px;
   &::after {
@@ -37,3 +35,16 @@
   }
 }
 }
+
+@media (max-width : 480px){  
+  .button{
+    padding: 0px 8px 1px 8px;
+  }
+  .btn-arrow{
+    padding: 0px 34px 2px 8px;
+    &::after {
+      right: 4px;
+      transform: scale(.7);
+    }
+  }
+  }

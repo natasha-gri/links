@@ -1,3 +1,98 @@
 @media (max-width: 480px){
+  .marquee-container{
+    margin: 0;
+    height: 38px;
+  }
 
+  .cover-header__columns {
+    margin-bottom: 31px;
+    &__ava{
+      width: 38%;
+      justify-content: flex-start;
+      & img {
+        max-width: 152%;
+        margin-left: -15px;
+    }
+    }
+    &__name {
+      width: 62%;
+      margin-left: 0px;
+      margin-top: 32px;
+      & span{
+        font-size: 20px;
+        padding-left: 0;
+      }
+      & p:nth-child(1){
+        margin-bottom: 7px;
+        padding-right: 64px;
+        text-align: right;
+      }
+      & p:nth-child(2){
+        &::after{
+          bottom: 25px;
+          right: -19px;
+        }
+      }
+      & p:nth-child(3){
+        margin-right: 0px;
+      }
+    }
+  }
+
+  .cover-footer__columns{
+    &__data{
+      padding-top: 36px;
+      &__description{
+        width: 52%;
+      }
+      &__buttons{
+        width: 40%;        
+      }
+      & p{
+        margin-bottom: $btn-subtitle-margin-bottom-480;
+      }
+      & a{
+        margin-bottom: $btn-margin-bottom-480;
+      }
+    }
+    &__contacts{
+      padding-top: 37px;
+      padding-bottom: 10px;
+      &__description{
+        width: 52%;
+      }
+      &__buttons{
+        width: 40%;
+      }
+      & p{
+        margin-bottom: $btn-subtitle-margin-bottom-480;
+      }
+      & a{
+        margin-bottom: $btn-margin-bottom-480;
+      }
+    }
+  }
+
+  .portfolio__columns{
+    flex-direction: column-reverse;
+    &__col{
+      width: 100%;
+      &__description{
+        width: 60%;
+      }
+      &__buttons{
+        width: 40%;
+      }
+      & p:not(:last-child){
+        margin-bottom: $btn-subtitle-margin-bottom-480;
+      }
+      & a:not(:last-child){
+        margin-bottom: $btn-margin-bottom-480;
+    }
+    & img{
+      max-width: 70%;
+      margin-bottom: 34px;
+    }
+    }
+  }
 }

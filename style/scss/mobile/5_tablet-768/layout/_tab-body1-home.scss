@@ -1,3 +1,33 @@
 @media (max-width : 768px) {
-  
+  .cover-header__columns{
+    &__ava{
+      & img{
+        max-width: 86%;
+      }
+    }
+    &__name{
+      margin-left: -42px;
+      & span{
+        font-size: 24px;
+      }
+    }
+  }
+
+  .cover-footer__columns{
+    column-gap: 0;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+    align-items: center;
+    &__data{
+      width: 100%;
+      padding-top: 30px;
+      border-top: 1px solid $color-dark;
+    }
+    &__contacts{
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 12px;
+      border-top: 1px solid $color-dark;
+    }
+  }
 }
