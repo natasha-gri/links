@@ -79,7 +79,7 @@ footer {
 }
 @media (max-width : 360px) {
   .container-rows {
-    width: 90%; // 
+    width: 92%; // 
   }
 }
 
@@ -149,5 +149,10 @@ footer {
 @media (max-width : 480px){
   .padding-block-cover{
     padding-bottom: 8px;
+  }
+}
+@media (max-width : 360px){
+  .padding-block-cover{
+    padding-top: 12px;
   }
 }

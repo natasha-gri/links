@@ -73,26 +73,28 @@
     }
   }
 
-  .portfolio__columns{
-    flex-direction: column-reverse;
+  .portfolio__columns{  
     &__col{
-      width: 100%;
-      &__description{
-        width: 60%;
+      &__item{
+        & p{
+          width: 63%;
+        }
+        & div{
+          width: 37%;
+          & a{
+          }
+        }
       }
-      &__buttons{
-        width: 40%;
+  
+      &__img{
+        & img{
+        }
       }
-      & p:not(:last-child){
-        margin-bottom: $btn-subtitle-margin-bottom-480;
-      }
-      & a:not(:last-child){
-        margin-bottom: $btn-margin-bottom-480;
-    }
-    & img{
-      max-width: 70%;
-      margin-bottom: 34px;
-    }
     }
   }
+
+}
+
+@media (max-width: 448px){
+
 }

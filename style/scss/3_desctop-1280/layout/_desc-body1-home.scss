@@ -53,17 +53,21 @@
     }
   }
 
-  .portfolio__columns{
+  .portfolio__columns{  
     &__col{
-      & p:not(:last-child){
-        margin-bottom: $btn-subtitle-margin-bottom-1280;
+      &__item{
+        & p{
+        }
+        & div{
+          & a{
+          }
+        }
       }
-
-      & a:not(:last-child){
-          margin-bottom: $btn-margin-bottom-1280;
-      }
-      & img{
-        max-width: 70%;
+  
+      &__img{
+        & img{
+          max-width: 70%;
+        }
       }
     }
   }
