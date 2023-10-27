@@ -51,7 +51,8 @@
 }
 
 @media (max-width : 360px){
-  .button{
-    
+  .btn-arrow::after {
+    right: 42px;
+    transform: scale(0.7);
   }
 }

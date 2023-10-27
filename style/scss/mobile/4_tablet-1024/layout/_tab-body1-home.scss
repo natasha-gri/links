@@ -1,3 +1,29 @@
 @media (max-width: 1024px) {
+  .cover-footer__columns{
+    &__data{
+      width: 45%;
+    }
+    &__contacts{
+      width: 55%;
+    }
+  }
 
+  .portfolio__columns{  
+    &__content{
+      width: 45%;
+      &__item{
+        & p{
+        }
+        & div{
+          & a{
+          }
+        }
+      }
+    }
+    &__img{
+      width: 55%;   
+      & div{
+      } 
+    }
+  }
 }

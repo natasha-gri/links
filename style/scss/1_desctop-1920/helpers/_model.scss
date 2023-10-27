@@ -146,6 +146,12 @@ footer {
     height: 114px;
   }
 }
+@media (max-width : 768px){
+  .padding-block-cover {
+    padding-top: 26px;
+    padding-bottom: 9px;
+  }
+}
 @media (max-width : 480px){
   .padding-block-cover{
     padding-bottom: 8px;

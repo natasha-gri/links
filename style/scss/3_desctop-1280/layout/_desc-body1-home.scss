@@ -34,42 +34,4 @@
     }
   }
 
-  .cover-footer__columns{
-    &__data{
-      & p{
-        margin-bottom: $btn-subtitle-margin-bottom-1280;
-      }
-      & a{
-        margin-bottom: $btn-margin-bottom-1280;
-      }
-    }
-    &__contacts{
-      & p{
-        margin-bottom: $btn-subtitle-margin-bottom-1280;
-      }
-      & a{
-        margin-bottom: $btn-margin-bottom-1280;
-      }
-    }
-  }
-
-  .portfolio__columns{  
-    &__col{
-      &__item{
-        & p{
-        }
-        & div{
-          & a{
-          }
-        }
-      }
-  
-      &__img{
-        & img{
-          max-width: 70%;
-        }
-      }
-    }
-  }
-
 }

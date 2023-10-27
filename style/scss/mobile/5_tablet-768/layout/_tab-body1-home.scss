@@ -1,5 +1,5 @@
 @media (max-width : 768px) {
-  .cover-header__columns{
+  .cover-header__columns{    
     &__ava{
       & img{
         max-width: 86%;
@@ -14,25 +14,39 @@
   }
 
   .cover-footer__columns{
-    column-gap: 0;
-    justify-content: space-evenly;
     flex-direction: column-reverse;
-    align-items: center;
     &__data{
       width: 100%;
-      padding-top: 30px;
+      padding: 26px 0 26px 0;
       border-top: 1px solid $color-dark;
+      &__item{
+        & p{
+          width: 50%;
+        }
+        & div{
+          width: 50%;
+        }
+      }
     }
     &__contacts{
       width: 100%;
-      padding-top: 30px;
-      padding-bottom: 12px;
+      padding: 26px 0 26px 0;
       border-top: 1px solid $color-dark;
+      &__item{
+        & p{
+          width: 50%;
+        }
+        & div{
+          width: 50%;
+        }
+      }
     }
   }
 
+
   .portfolio__columns{  
-    &__col{
+    &__content{
+      width: 50%; 
       &__item{
         & p{
         }
@@ -42,18 +56,23 @@
         }
       }
   
-      &__img{
-        justify-content: flex-end;
-        & img{
-        }
+    }
+    &__img{
+      width: 50%; 
+      justify-content: flex-end;
+      align-items: center;
+      & div{
+        width: 67%; 
       }
     }
   }
 }
+
 @media (max-width : 700px){
   .portfolio__columns{  
     flex-direction: column-reverse;
-    &__col{
+    row-gap: 2vh;
+    &__content{
       width: 100%;
       &__item{
         & p{
@@ -66,18 +85,20 @@
         }
       }
   
-      &__img{
-        justify-content: center;
-        & img{
-          max-width: 42%;
-        }
-      }
+      
+    }
+    &__img{ 
+      width: 100%;
+      justify-content: center;
+      & div{
+        width: 45%;
+      } 
     }
   }
 
   @media (max-width : 600px){
     .portfolio__columns{  
-      &__col{
+      &__content{
         &__item{
           & p{
           }
@@ -87,11 +108,11 @@
           }
         }
     
-        &__img{
-          & img{
-            max-width: 54%;
-          }
-        }
+      }
+      &__img{ 
+        & div{
+          width: 55%;
+        } 
       }
     }
   }
