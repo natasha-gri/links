@@ -335,6 +335,197 @@ p {
     .portfolio__columns__img div {
       width: 60%; }
 
+/*-------------------------------------------*/
+/*                 modal                     */
+/*-------------------------------------------*/
+.modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000d9;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .modal__block {
+    width: 75%;
+    height: 71%;
+    position: relative;
+    left: 36px;
+    background-color: #000;
+    border-radius: 20px; }
+    .modal__block-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px; }
+  .modal__phone {
+    width: auto;
+    height: auto;
+    padding: 50px; }
+  .modal__close {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border-radius: 5px;
+    color: white;
+    font-size: 29px;
+    cursor: pointer; }
+    .modal__close:hover {
+      background-color: rgba(175, 175, 175, 0.42); }
+    .modal__close:active {
+      background-color: rgba(175, 175, 175, 0.23); }
+
+.hide {
+  display: none; }
+
+/*-------------------------------------------*/
+/*                 slider1                   */
+/*-------------------------------------------*/
+.v-slider_education1 {
+  height: 80vh;
+  padding: 0 0 0 0; }
+
+.v-slider_education1__slide__image {
+  width: 70vw;
+  height: 100%; }
+
+@media (max-width: 1280px) {
+  .v-slider_education1 {
+    height: 85vh; }
+
+  .v-slider_education1__slide__image {
+    width: 80vw;
+    height: 100%; } }
+@media (max-width: 1024px) {
+  .v-slider_education1 {
+    height: 80vh; }
+
+  .v-slider_education1__slide__image {
+    width: 85vw;
+    height: 100%; } }
+@media (max-width: 768px) {
+  .v-slider_education1 {
+    height: 53vh; }
+
+  .v-slider_education1__slide__image {
+    width: 98vw;
+    height: 100%; } }
+@media (max-width: 480px) {
+  .v-slider_education1 {
+    height: 83vh; } }
+@media (max-width: 360px) {
+  .v-slider_education1 {
+    height: 79vh; } }
+.v-slider_education1__slide__image img {
+  min-width: 100%;
+  object-fit: cover; }
+
+.img1 {
+  background-image: url(/img/1.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.img2 {
+  background-image: url(/img/2.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.img3 {
+  background-image: url(/img/3.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+/*-------------------------------------------*/
+/*                 slider2                   */
+/*-------------------------------------------*/
+.v-slider_education2 {
+  height: 80vh;
+  padding: 0 0 0 0; }
+
+.v-slider_education2__slide__image {
+  width: 70vw;
+  height: 100%; }
+
+@media (max-width: 1280px) {
+  .v-slider_education2 {
+    height: 85vh; }
+
+  .v-slider_education2__slide__image {
+    width: 80vw;
+    height: 100%; } }
+@media (max-width: 1024px) {
+  .v-slider_education2 {
+    height: 80vh; }
+
+  .v-slider_education2__slide__image {
+    width: 85vw;
+    height: 100%; } }
+@media (max-width: 768px) {
+  .v-slider_education2 {
+    height: 53vh; }
+
+  .v-slider_education2__slide__image {
+    width: 98vw;
+    height: 100%; } }
+@media (max-width: 480px) {
+  .v-slider_education2 {
+    height: 83vh; } }
+@media (max-width: 360px) {
+  .v-slider_education2 {
+    height: 79vh; } }
+.v-slider_education2__slide__image img {
+  min-width: 100%;
+  object-fit: cover; }
+
+.img4 {
+  background-image: url(/img/4.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.img5 {
+  background-image: url(/img/5.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.img6 {
+  background-image: url(/img/6.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.img7 {
+  background-image: url(/img/7.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.v-slider_education1 .swiper-pagination-bullet,
+.v-slider_education2 .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  font-size: 8px;
+  background-color: #a629ff; }
+
+.swiper-pagination-bullet {
+  margin: 10px 0 10px 0 !important; }
+
+.swiper-pagination-bullet-active {
+  transform: scale(1.5); }
+
 .button {
   padding: 0px 18px 1px 16px;
   display: flex;

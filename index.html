@@ -17,8 +17,6 @@
   <link rel="stylesheet" href="style/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
 
-  <script defer src="js/swiper-bundle.min.js"></script>
-  <script defer src="js/main.js"></script>
 </head>
 
 <body>
@@ -83,11 +81,11 @@
                     <div class="cover-footer__columns__data">
                       <div class="cover-footer__columns__data__item item__mb">
                         <p class="">образование смотреть</p>
-                        <div><a href="https://drive.google.com/file/d/1xeLALfRSsKpoLGX77N5To9X9kCqPVun1/view?usp=sharing" class="button-text button btn-arrow" target="_blank">здесь</a></div>
+                        <div><a href="#" class="button-text button btn-arrow img1__ad">здесь</a></div>
                       </div>
                       <div class="cover-footer__columns__data__item">
                         <p class="">дополнительно</p>
-                        <div><a href="https://drive.google.com/file/d/1jhg6vc3BHQRw709ZZpSxLnlay_3cgdsr/view?usp=sharing" class="button-text button btn-arrow" target="_blank">тут</a></div>
+                        <div><a href="#" class="button-text button btn-arrow img2__ad">тут</a></div>
                       </div>
                     </div>
                     <!-- contacts -->
@@ -215,7 +213,84 @@
       </div>  
     </div>
   </footer>
+
+  <!-- модалка кнопки здесь -->
+  <div class="modal modal-img1__add hide">
+    <div class="modal__blocK">
+      
+        <!-- Главный контейнер слайдера -->
+        <div class="swiper v-slider_education1">
+        
+          <!-- Оболочка -->
+          <div class="swiper-wrapper v-slider_education1__wrapper">
+            <!-- Слайды -->
+            <!-- 1 -->
+            <div class="swiper-slide v-slider_education1__slide">
+              <div class="v-slider_education1__slide__image img1">
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="swiper-slide">
+              <div class="v-slider_education1__slide__image img2">
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="swiper-slide">
+              <div class="v-slider_education1__slide__image  img3">
+              </div>
+            </div>
+          </div>       
+          <!-- Пагинация -->
+          <div class="swiper-pagination"></div>
+        </div>
+      <!-- крестик -->
+      <a  class="modal__close video__ad">&#10006;</a>   
+    </div>
+  </div>
+
+    <!-- модалка кнопки здесь -->
+    <div class="modal modal-img2__add hide">
+      <div class="modal__blocK">
+        
+          <!-- Главный контейнер слайдера -->
+          <div class="swiper v-slider_education2">
+          
+            <!-- Оболочка -->
+            <div class="swiper-wrapper v-slider_education2__wrapper">
+              <!-- Слайды -->
+              <!-- 1 -->
+              <div class="swiper-slide v-slider_education2__slide">
+                <div class="v-slider_education2__slide__image img4">2
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="swiper-slide">
+                <div class="v-slider_education2__slide__image img5">2
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="swiper-slide">
+                <div class="v-slider_education2__slide__image  img6">2
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="swiper-slide">
+                <div class="v-slider_education2__slide__image  img7">2
+                </div>
+              </div>
+            </div>       
+            <!-- Пагинация -->
+            <div class="swiper-pagination"></div>
+          </div>
+        <!-- крестик -->
+        <a  class="modal__close video__ad">&#10006;</a>   
+      </div>
+    </div>
+
 </body>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/modal.js"></script>
 <svg width="0" height="0" class="hidden">
   <symbol version="1.1" id="vk" xmlnsSvgjs="http://svgjs.com/svgjs" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" viewBox="0 0 512 512">
     <path d="M476.1,35.9C440.1,0,382.3,0,266.7,0h-21.3C129.7,0,71.9,0,35.9,35.9C0,71.9,0,129.7,0,245.3v21.3
