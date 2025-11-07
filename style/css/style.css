@@ -211,7 +211,7 @@ p {
   to {
     transform: translateX(-50%); } }
 .marquee3::after {
-  content: "\a   copyright   2024   ©    copyright   2024   ©    copyright   2024   ©    copyright   2024   ©    copyright   2024   ©    copyright   2024   ©    copyright   2024   ©    copyright   2024   ©    copyright   2024   ©    copyright   2024   ©    copyright   2024   ©    copyright   2024   ©    copyright   2024   ©    copyright   2024   ©    copyright   2024   ©    copyright   2024   ©    copyright   2024   ©    copyright   2024   ©  "; }
+  content: "\a   copyright   2025   ©    copyright   2025   ©    copyright   2025   ©    copyright   2025   ©    copyright   2025   ©    copyright   2025   ©    copyright   2025   ©    copyright   2025   ©    copyright   2025   ©    copyright   2025   ©    copyright   2025   ©    copyright   2025   ©    copyright   2025   ©    copyright   2025   ©    copyright   2025   ©    copyright   2025   ©    copyright   2025   ©    copyright   2025   ©  "; }
 
 .marquee3 {
   white-space: nowrap;
@@ -509,6 +509,30 @@ p {
 
 .img7 {
   background-image: url(../../img/77.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.img8 {
+  background-image: url(../../img/88.png);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.img9 {
+  background-image: url(../../img/99.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.img10 {
+  background-image: url(../../img/1010.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.img11 {
+  background-image: url(../../img/1111.jpg);
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: contain; }
