@@ -121,11 +121,7 @@ footer {
 .first-font, h1, .c
 .text-basic,
 p, .marquee-text, .button-text {
-  font-family: 'Mont', Arial, Helvetica, sans-serif;
   font-family: 'Unbounded', sans-serif; }
-
-.second-font {
-  font-family: 'OlympicHeadline', Arial, Helvetica, sans-serif; }
 
 h1 {
   font-size: 3em;
