@@ -319,7 +319,7 @@ p {
         white-space: nowrap;
         text-align: right; }
       .portfolio__columns__content__item div {
-        width: 20%;
+        width: 22%;
         display: flex;
         justify-content: flex-start; }
         .portfolio__columns__content__item div a {
@@ -644,9 +644,11 @@ p {
     width: 55%; }
 
   .portfolio__columns__content {
-    width: 45%; }
+    width: 55%; }
   .portfolio__columns__img {
-    width: 55%; } }
+    width: 45%; }
+    .portfolio__columns__img div {
+      width: 85%; } }
 /* 5_tablet-от 480 до 768*/
 @media (max-width: 768px) {
   .cover-header__columns__ava img {
@@ -683,22 +685,22 @@ p {
     align-items: center; }
     .portfolio__columns__img div {
       width: 67%; } }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .portfolio__columns {
     flex-direction: column-reverse;
     row-gap: 2vh; }
     .portfolio__columns__content {
       width: 100%; }
       .portfolio__columns__content__item p {
-        width: 60%; }
+        width: 50%; }
       .portfolio__columns__content__item div {
-        width: 40%; }
+        width: auto; }
     .portfolio__columns__img {
       width: 100%;
       justify-content: center; }
       .portfolio__columns__img div {
         width: 45%; } }
-@media (max-width: 700px) and (max-width: 600px) {
+@media (max-width: 768px) and (max-width: 600px) {
   .portfolio__columns__img div {
     width: 55%; } }
 /* 6_mob-от 360 до 480*/
@@ -750,10 +752,12 @@ p {
     white-space: normal;
     line-height: 110%; }
 
-  .portfolio__columns__content__item p {
-    width: 63%; }
-  .portfolio__columns__content__item div {
-    width: 37%; }
+  .portfolio__columns__content__item {
+    column-gap: 10px; }
+    .portfolio__columns__content__item p {
+      width: 63%; }
+    .portfolio__columns__content__item div {
+      width: 30%; }
   .portfolio__columns__img div {
     width: 60%; } }
 /* 7_mob-до 360*/
@@ -849,6 +853,9 @@ p {
         padding-top: 4px;
         padding-bottom: 5px; }
   .portfolio__columns__img div {
-    width: 74%; } }
+    width: 74%; }
+
+  .botton-mb-360 {
+    margin-bottom: 15px; } }
 
 /*# sourceMappingURL=style.css.map */

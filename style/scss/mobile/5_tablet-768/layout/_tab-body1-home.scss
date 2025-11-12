@@ -68,7 +68,7 @@
   }
 }
 
-@media (max-width : 700px){
+@media (max-width : 768px){
   .portfolio__columns{  
     flex-direction: column-reverse;
     row-gap: 2vh;
@@ -76,10 +76,10 @@
       width: 100%;
       &__item{
         & p{
-          width: 60%;
+          width: 50%;
         }
         & div{
-          width: 40%;
+          width: auto;
           & a{
           }
         }
